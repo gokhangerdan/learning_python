@@ -1,6 +1,6 @@
 # Estimating the hubble types of spiral galaxies
 
-'''
+```python
 from sklearn.ensemble import RandomForestClassifier
 
 import pandas as pd
@@ -42,4 +42,4 @@ print(test['Hubble'].head())
 print(pd.crosstab(test['Hubble'], preds, rownames=['Actual Species'], colnames=['Predicted Species']))
 
 print(list(zip(train[features], clf.feature_importances_)))
-'''
+```
