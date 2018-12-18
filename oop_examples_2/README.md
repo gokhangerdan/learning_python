@@ -10,7 +10,7 @@ p = Person()
 print(p)
 ```
 
-### Output:
+###### Output:
 
 ```
 $ python oop_simplestclass.py
@@ -30,7 +30,7 @@ p.say_hi()
 # Person().say_hi()
 ```
 
-### Output:
+###### Output:
 
 ```
 $ python oop_method.py
