@@ -1,6 +1,6 @@
-###Flask RESTful API Examples
+### Flask RESTful API Examples
 
-'''python
+```python
 from flask import Flask
 from flask_restful import Resource, Api
 
@@ -15,12 +15,12 @@ api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
     app.run(debug=True)
-'''
+```
 
 > Save this as api.py and run it using your Python interpreter. Note that we’ve enabled Flask debugging mode to provide code reloading and better error messages.
 
-'''
+```
 $ python api.py
  * Running on http://127.0.0.1:5000/
  * Restarting with reloader
-'''
+```
