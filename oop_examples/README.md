@@ -1,9 +1,13 @@
 # Python Object Oriented Programming Examples
 
+### Example 1:
+
 ```python
 class Dog:
     pass
 ```
+
+### Example 2:
 
 ```python
 class Dog:
@@ -13,6 +17,8 @@ class Dog:
         self.name = name
         self.age = age
 ```
+
+### Example 3:
 
 ```python
 class Dog:
@@ -25,6 +31,8 @@ class Dog:
         self.name = name
         self.age = age
 ```
+
+### Interactive shell example:
 
 ```python
 >>> class Dog:
@@ -40,6 +48,8 @@ class Dog:
 False
 ```
 
+### Interactive shell example:
+
 ```python
 >>> class Dog:
 ...     pass
@@ -48,6 +58,8 @@ False
 >>> type(a)
 <class '__main__.Dog'>
 ```
+
+### Example 4:
 
 ```python
 class Dog:
@@ -74,10 +86,14 @@ if philo.species == "mammal":
     print("{0} is a {1}!".format(philo.name, philo.species))
 ```
 
+###### Output:
+
 ```
 Philo is 5 and Mikey is 6.
 Philo is a mammal!
 ```
+
+### Example 5:
 
 ```python
 class Dog:
@@ -106,10 +122,14 @@ print(mikey.description())
 print(mikey.speak("Gruff Gruff"))
 ```
 
+###### Output:
+
 ```
 Mikey is 6 years old
 Mikey says Gruff Gruff
 ```
+
+### Interactive shell example:
 
 ```python
 >>> class Email:
@@ -126,15 +146,7 @@ False
 True
 ```
 
-```python
-class Dog(object):
-    pass
-
-# In Python 3, this is the same as:
-
-class Dog:
-    pass
-```
+### Interactive shell example
 
 ```python
 >>> class Dog:
@@ -148,6 +160,8 @@ class Dog:
 >>> sara.breed
 'Boston Terrier'
 ```
+
+### Example 6:
 
 ```python
 # Parent class
@@ -192,10 +206,14 @@ print(jim.description())
 print(jim.run("slowly"))
 ```
 
+###### Output:
+
 ```
 Jim is 12 years old
 Jim runs slowly
 ```
+
+### Example 7:
 
 ```python
 # Parent class
@@ -254,6 +272,8 @@ print(isinstance(johnnywalker, Bulldog))
 print(isinstance(julie, jim))
 ```
 
+###### Output:
+
 ```
 ('Jim', 12)
 Jim runs slowly
@@ -265,6 +285,8 @@ Traceback (most recent call last):
     print(isinstance(julie, jim))
 TypeError: isinstance() arg 2 must be a class, type, or tuple of classes and types
 ```
+
+### Interactive shell example:
 
 ```python
 >>> class Dog:
