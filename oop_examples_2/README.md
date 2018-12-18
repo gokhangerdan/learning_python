@@ -140,7 +140,7 @@ C-3PO was the last one.
 We have 0 robots.
 ```
 
-### Example %:
+### Example 5:
 
 ```python
 class SchoolMember:
