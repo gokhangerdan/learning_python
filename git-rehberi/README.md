@@ -1,5 +1,7 @@
 # GIT Rehberi
 
+<img src="https://i.imgflip.com/xsdtv.jpg" width="300">
+
 ### Yeni bir depo oluşturmak
 
 Yeni bir depo oluşturmak için, bir klasör oluşturup içerisinde
