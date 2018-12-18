@@ -1,5 +1,7 @@
 # Flask RESTful API Examples
 
+<img src="https://cdn-images-1.medium.com/max/1600/1*xYLzqIu_l8owG7FVzinUJQ.jpeg" width="300">
+
 ```python
 from flask import Flask
 from flask_restful import Resource, Api
