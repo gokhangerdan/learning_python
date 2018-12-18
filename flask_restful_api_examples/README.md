@@ -26,3 +26,5 @@ $ python api.py
 ```
 > ## Warning:
 > Debug mode should never be used in a production environment!
+
+> Now open up a new prompt to test out your API using curl
