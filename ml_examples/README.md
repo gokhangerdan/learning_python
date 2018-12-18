@@ -9,7 +9,7 @@ import numpy as np
 
 np.random.seed(0)
 
-df = pd.read_table('courteau99.dat', sep='\s+')
+df = pd.read_table('data/courteau99.dat', sep='\s+')
 
 df = df.drop(df.index[0])
 
