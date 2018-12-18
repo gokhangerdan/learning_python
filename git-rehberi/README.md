@@ -48,7 +48,7 @@ Henüz uzak bir deponuz yoksa ve uzak depo eklemek istiyorsanız,
 
 şimdi değişikliklerinizi uzak sunucuya gönderebilirsiniz.
 
-###Dallar ile çalışmak
+### Dallar ile çalışmak
 
 Dallar farklı özellikleri ayrı ayrı geliştirmek için kullanılır. Yeni bir depo oluşturduğunuzda master "varsayılan" daldır. Diğer dallar geliştirildikten sonra master'a birleştirilir.
 
@@ -67,3 +67,48 @@ ve oluşturduğumuz dalı silmek için
 bir dalı uzak deponuza göndermedikçe başkaları tarafından kullanılabilir olmaz
 
 ```git push origin <dal>```
+
+### Güncelleme & birleştirme
+
+En son değişiklikleri (commit) yerel deponuza almak için
+
+```git pull```
+
+komutunu çalıştırın. Bu değişiklikleri al (fetch) ve birleştir (merge) yapacaktır. Aktif dala (örn. master) başka bir dalı birleştirmek için 
+
+```git merge <dal>```
+
+her iki durumda da git değişiklikleri otomatik birleştirmeyi (auto-merge) dener. Maalesef, bu her zaman mümkün olmaz ve çakışmalarla (conflict) sonuçlanır. Git tarafından gösterilen dosyaları elle düzenleyerek bu çakışmaları birleştirmek size düşer. Değişikliklerden sonra, dosyaları eklemek için
+
+```git add <dosyaadı>```
+
+değişiklikleri birleştirmeden önce, önizleme yapmak için
+
+```git diff <kaynak_dal> <hedef_dal>```
+
+### Sürümlemek
+
+Yazılım sürümleriniz için sürüm adı (tag) oluşturmanız tavsiye edilir. bu SVN'de de mevcut olan bilindik bir kavramdır. 1.0.0 adıyla bir sürüm numarası (tag) oluşturmak için
+
+```git tag 1.0.0 1b2e1d63ff```
+
+buradaki 1b2e1d63ff yayımlanacak yazılım sürümünüzün işlem numarasının ilk 10 karakteridir. İşlem kimlik numaralarını görmek için
+
+```git log```
+
+tekil olduğu sürece daha az işlem numarası da kullanabilirsiniz.
+
+### Yerel değişiklikleri geri almak
+
+Yanlış birşey yapmanız durumunda (tabi ki böyle şeyler hiç olmaz ;)) yerel değişiklikleri geri almak için
+
+```git checkout -- <dosyaadı>```
+
+bu değişikliklerinizi HEAD içerisindeki son içerik ile değiştirir. Index'e önceden eklenmiş değişiklikler ve yeni dosyalar korunacaktır.
+
+Eğer tüm yerel değişiklik ve teslimlerinizi iptal etmek istiyorsanız, sunucudan en son kayıtları getirin ve yerel master dalınıza gösterin
+
+```
+git fetch origin
+git reset --hard origin/master
+```
