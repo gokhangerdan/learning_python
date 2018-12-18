@@ -1,6 +1,6 @@
 # GIT Rehberi
 
-<img src="https://i.imgflip.com/xsdtv.jpg" width="300">
+<img src="https://i.imgflip.com/xsdtv.jpg" width="400">
 
 ### Yeni bir depo oluşturmak
 
