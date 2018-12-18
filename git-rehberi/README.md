@@ -44,6 +44,26 @@ değişiklikleri uzak deponuzdaki göndermek istediğiniz dal'ı master ile değ
 
 Henüz uzak bir deponuz yoksa ve uzak depo eklemek istiyorsanız,
 
-```git remote add origin <sunucu>``
+```git remote add origin <sunucu>```
 
 şimdi değişikliklerinizi uzak sunucuya gönderebilirsiniz.
+
+###Dallar ile çalışmak
+
+Dallar farklı özellikleri ayrı ayrı geliştirmek için kullanılır. Yeni bir depo oluşturduğunuzda master "varsayılan" daldır. Diğer dallar geliştirildikten sonra master'a birleştirilir.
+
+"feature_x" adıyla yeni bir dal oluşturup o dala geçmek için 
+
+```git checkout -b feature_x```
+
+master'a geri geçmek için
+
+```git checkout master```
+
+ve oluşturduğumuz dalı silmek için
+
+```git branch -d feature_x```
+
+bir dalı uzak deponuza göndermedikçe başkaları tarafından kullanılabilir olmaz
+
+```git push origin <dal>```
